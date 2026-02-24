@@ -1,0 +1,31 @@
+/* Master CSS — imports all stylesheets in correct order */
+@import './styles/global.css';
+@import './styles/home.css';
+@import './styles/pages.css';
+@import './styles/admin.css';
+
+/* Ensure #root fills viewport properly */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none !important;
+}
+
+/* Main content area grows to fill space between header and footer */
+main,
+.page-content-wrapper {
+  flex: 1;
+  padding-top: 100px;
+  /* Space for fixed header */
+}
+
+/* Admin layout has its own header — no padding needed */
+.admin-layout main {
+  padding-top: 0 !important;
+}
+
+/* Hero slider is full-bleed, negate header padding */
+main>.hero-slider-premium:first-child {
+  margin-top: -100px;
+}

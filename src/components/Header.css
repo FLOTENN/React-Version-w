@@ -1,0 +1,9 @@
+.header-enquire-btn {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .header-enquire-btn {
+        display: inline-flex !important;
+    }
+}
