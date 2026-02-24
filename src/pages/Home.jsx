@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { getServices, getPublishedTestimonials, getActiveHeroSlides } from '../services/api';
 import '../styles/home.css';
+import AnimatedButton from '../components/AnimatedButton';
 
 // Fallback data
 const FALLBACK_SLIDES = [
