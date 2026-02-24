@@ -215,7 +215,7 @@ npm run dev
 | # | Component | Accomplishment |
 |---|-----------|----------------|
 | 1 | **Typography & Colors** | Switched global fonts to Space Grotesk and Inter. Changed root background from `#050505` to true `#030303`/`#0a0a0a` strict obsidian, with true `#ff003c` neon red. |
-| 2 | **GSAP Animated Buttons** | Replaced all standard links and buttons across public pages with a new `<AnimatedButton>` component. Features a GSAP timeline animation that triggers a paper-plane flyaway effect on click with FontAwesome icons, and glowing drop shadows on hover. |
+| 2 | **GSAP Animated Buttons** | Created a universal `AnimatedButton.jsx` component leveraging custom GSAP timelines (magnetic pull + paper plane/arrow animated icons) and applied it to replace every public button site-wide. |
 | 3 | **Hover Effects** | Added physical lift transformations (`translateY`) to Service, Blog, and Contact cards. Replaced static shadows with glowing neon red drop shadows globally. |
 | 4 | **Global Unification** | Stripped hardcoded inline styles from 8+ JSX files and unified all Hero sections using a sleek red radial-gradient overlay in `pages.css`. |
 | 5 | **Custom Progress** | Designed a custom Webkit scrollbar and integrated a React `ScrollIndicator` tracking vertical scroll percentage globally. |

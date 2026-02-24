@@ -1,9 +1,7 @@
-
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { getServices, getPublishedTestimonials, getActiveHeroSlides } from '../services/api';
-import AnimatedButton from '../components/AnimatedButton';
 import '../styles/home.css';
 
 // Fallback data
@@ -144,9 +142,9 @@ export default function Home() {
 
             {/* ====== HERO SLIDER ====== */}
             <section className="hero-slider-premium" id="heroSlider">
-                <div className="slider-track" ref={trackRef} style={{ transform: `translateX(-${currentSlide * 100} %)` }}>
+                <div className="slider-track" ref={trackRef} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                     {slides.map((slide, i) => (
-                        <div className={`slide - premium ${i === currentSlide ? 'active' : ''} `} key={i}>
+                        <div className={`slide-premium ${i === currentSlide ? 'active' : ''}`} key={i}>
                             <div className="slide-bg" style={{ backgroundImage: `url('${slide.image_url}')` }}></div>
                             <div className="slide-overlay-premium"></div>
                             <div className="container slide-content-premium">
@@ -176,7 +174,7 @@ export default function Home() {
                 <div className="slider-dots-premium" id="sliderDots">
                     {slides.map((_, i) => (
                         <button
-                            className={`dot - premium ${i === currentSlide ? 'active' : ''} `}
+                            className={`dot-premium ${i === currentSlide ? 'active' : ''}`}
                             key={i}
                             onClick={() => goToSlide(i)}
                         >
@@ -237,7 +235,7 @@ export default function Home() {
                             const imgUrl = service.image_url || FALLBACK_SERVICES[i % FALLBACK_SERVICES.length].image_url;
 
                             return (
-                                <Link to={`/ service / ${slug} `} className="service-card-premium" key={i}>
+                                <Link to={`/service/${slug}`} className="service-card-premium" key={i}>
                                     <div className="service-img-wrapper">
                                         <img src={imgUrl} alt={name} loading="lazy" />
                                     </div>

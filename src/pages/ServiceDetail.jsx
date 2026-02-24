@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import AnimatedButton from '../components/AnimatedButton';
 import { getServiceBySlug } from '../services/api';
 import '../styles/pages.css';
+import AnimatedButton from '../components/AnimatedButton';
 
 export default function ServiceDetail() {
     const { slug } = useParams();
@@ -32,7 +32,7 @@ export default function ServiceDetail() {
         return (
             <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#777', gap: '20px' }}>
                 <h2>Service Not Found</h2>
-                <AnimatedButton to="/services" className="btn-glow" iconClass="fa-solid fa-arrow-left">Back to Services</AnimatedButton>
+                <AnimatedButton to="/services" iconClass="fa-solid fa-arrow-left">Back to Services</AnimatedButton>
             </div>
         );
     }
@@ -70,7 +70,7 @@ export default function ServiceDetail() {
                             Interested in {service.name}?
                         </h3>
                         <p style={{ color: '#888', marginBottom: '30px' }}>Get a free consultation and quote from our specialists.</p>
-                        <AnimatedButton to="/contact" className="btn-glow" iconClass="fa-solid fa-envelope">Enquire Now</AnimatedButton>
+                        <AnimatedButton to="/contact">Enquire Now</AnimatedButton>
                     </div>
                 </div>
             </section>

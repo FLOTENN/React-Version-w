@@ -60,7 +60,7 @@ export default function NotFound() {
                     The page you're looking for doesn't exist or has been moved.
                 </p>
 
-                <AnimatedButton to="/" className="btn-glow" style={{ position: 'relative' }} iconClass="fa-solid fa-home">
+                <AnimatedButton to="/" style={{ position: 'relative' }} iconClass="fa-solid fa-home">
                     Back to Home
                 </AnimatedButton>
             </section>

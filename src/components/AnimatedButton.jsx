@@ -9,7 +9,7 @@ export default function AnimatedButton({
     onClick,
     type,
     className = "",
-    iconClass = "fa-solid fa-paper-plane",
+    iconClass = "fa-solid fa-arrow-right",
     disabled = false,
     ...rest
 }) {
@@ -19,6 +19,7 @@ export default function AnimatedButton({
     const handleAnimate = () => {
         if (!iconRef.current) return;
 
+        // The user's exact GSAP animation timeline
         const tl = gsap.timeline();
 
         tl.to(iconRef.current, {
@@ -57,22 +58,28 @@ export default function AnimatedButton({
             onClick(e);
         }
 
+        // Handle routing logic after animation starts
         if (to && !onClick) {
             e.preventDefault();
-            setTimeout(() => navigate(to), 400); // Let animation play out partially before navigating
+            // Short delay to let the icon blast off before navigating
+            setTimeout(() => navigate(to), 300);
         } else if (href && !onClick) {
-            e.preventDefault();
-            setTimeout(() => window.location.href = href, 400);
+            if (rest.target === "_blank") {
+                // Don't delay blank targets natively, just animate visually
+            } else {
+                e.preventDefault();
+                setTimeout(() => window.location.href = href, 300);
+            }
         }
     };
 
-    const combinedClassName = `btn-animated ${className}`.trim();
+    const combinedClassName = `animated-premium-btn ${className}`.trim();
 
-    // If we receive "submitting" text, we can swap out the icon, or just use paper plane
+    // The custom layout: text left, icon right inside a circle
     const renderContent = () => (
         <>
-            <span className="btn-animated-text">{children}</span>
-            <span className="btn-animated-icon">
+            <span className="btn-text">{children}</span>
+            <span className="btn-icon">
                 <i className={iconClass} ref={iconRef}></i>
             </span>
         </>
