@@ -161,7 +161,7 @@ export default function Contact() {
                                         <textarea name="message" rows="4" className="form-control-premium" placeholder="Tell us about your requirements..." required value={formData.message} onChange={handleChange} style={{ resize: 'vertical' }}></textarea>
                                     </div>
 
-                                    <button type="submit" className="btn-submit" disabled={submitting}>
+                                    <button type="submit" className="btn" disabled={submitting}>
                                         {submitting ? 'Sending...' : 'Send Message'}
                                     </button>
                                     <p style={{ fontSize: '0.8rem', color: '#555', marginTop: '25px', textAlign: 'center' }}>

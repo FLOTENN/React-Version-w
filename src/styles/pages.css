@@ -729,46 +729,7 @@
     padding-left: 10px;
 }
 
-.btn-submit {
-    width: 100%;
-    padding: 18px;
-    background: var(--white);
-    color: var(--black);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-}
 
-.btn-submit::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--primary);
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.btn-submit:hover {
-    color: var(--white);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.btn-submit:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
 
 .map-container {
     position: relative;
