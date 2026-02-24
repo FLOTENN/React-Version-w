@@ -218,7 +218,7 @@ npm run dev
 | 2 | **GSAP Animated Buttons** | Created a universal `AnimatedButton.jsx` component leveraging custom GSAP timelines (magnetic pull + paper plane/arrow animated icons) and applied it to replace every public button site-wide. |
 | 3 | **Hover Effects** | Added physical lift transformations (`translateY`) to Service, Blog, and Contact cards. Replaced static shadows with glowing neon red drop shadows globally. |
 | 4 | **Global Unification** | Stripped hardcoded inline styles from 8+ JSX files and unified all Hero sections using a sleek red radial-gradient overlay in `pages.css`. |
-| 5 | **Custom Progress** | Designed a custom Webkit scrollbar and integrated a React `ScrollIndicator` tracking vertical scroll percentage globally. |
+| 5 | **Custom Progress** | Designed a custom Webkit high-contrast scrollbar globally. |
 
 **Files modified:** `src/styles/*.css` (global, home, pages), `index.html`, `src/components/ScrollIndicator.jsx`, `src/layouts/PublicLayout.jsx`, `src/pages/*.jsx` (About, FAQ, Services, Contact, Gallery, Blog, Page, NotFound).
 **Build:** ✅ 132 modules (0 errors).
