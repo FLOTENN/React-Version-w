@@ -208,7 +208,24 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
-### 2026-02-20 — Supabase Database Setup & Admin Panel Polish (Latest)
+### 2026-02-24 — Premium Global High-Contrast UI Overhaul (Latest)
+
+**Major Enhancement:** Upgraded the entire website's user interface to a premium, rich, high-contrast dark theme with neon glassmorphism effects universally applied to all pages.
+
+| # | Component | Accomplishment |
+|---|-----------|----------------|
+| 1 | **Typography & Colors** | Switched global fonts to Space Grotesk and Inter. Changed root background from `#050505` to true `#030303`/`#0a0a0a` strict obsidian, with true `#ff003c` neon red. |
+| 2 | **Glassmorphism** | Replaced flat red buttons and headers with `backdrop-filter: blur()`, neon red luminous borders, and translucent gradients. |
+| 3 | **Hover Effects** | Added physical lift transformations (`translateY`) to Service, Blog, and Contact cards. Replaced static shadows with glowing neon red drop shadows globally. |
+| 4 | **Global Unification** | Stripped hardcoded inline styles from 8+ JSX files and unified all Hero sections using a sleek red radial-gradient overlay in `pages.css`. |
+| 5 | **Custom Progress** | Designed a custom Webkit scrollbar and integrated a React `ScrollIndicator` tracking vertical scroll percentage globally. |
+
+**Files modified:** `src/styles/*.css` (global, home, pages), `index.html`, `src/components/ScrollIndicator.jsx`, `src/layouts/PublicLayout.jsx`, `src/pages/*.jsx` (About, FAQ, Services, Contact, Gallery, Blog, Page, NotFound).
+**Build:** ✅ 132 modules (0 errors).
+
+---
+
+### 2026-02-20 — Supabase Database Setup & Admin Panel Polish
 
 **Final step in the PHP→React migration:** Connected the React application to a live Supabase back-end with the exact database schema and design from the PHP site.
 
