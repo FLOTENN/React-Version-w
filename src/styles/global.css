@@ -1,16 +1,16 @@
 /* ===== GLOBAL THEME ===== */
 :root {
-    --primary: #FF0000;
-    --primary-dark: #cc0000;
-    --black: #080808;
-    --dark-grey: #0e0e0e;
-    --light-grey: #1a1a1a;
+    --primary: #ff003c;
+    --primary-dark: #cc0030;
+    --black: #030303;
+    --dark-grey: #0a0a0a;
+    --light-grey: #141414;
     --white: #ffffff;
     --text-grey: #a8a8a8;
 
     /* Typography System */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --font-display: 'Bebas Neue', sans-serif;
 
     /* Spacing & Leading */
@@ -22,6 +22,30 @@
     --leading-tight: 1.1;
     --leading-normal: 1.6;
     --leading-relaxed: 1.8;
+}
+
+/* Custom Selection */
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
 }
 
 * {
@@ -123,8 +147,10 @@ button[type="submit"] {
     justify-content: center;
     padding: 16px 45px;
 
-    /* Premium Gradient */
-    background: linear-gradient(135deg, #ff0000 0%, #990000 100%);
+    /* Glassmorphism Gradient */
+    background: linear-gradient(135deg, rgba(255, 0, 60, 0.4) 0%, rgba(204, 0, 48, 0.1) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     color: var(--white);
     font-family: var(--font-heading);
@@ -134,7 +160,7 @@ button[type="submit"] {
     /* Cinematic spacing */
     font-size: 0.85rem;
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 60, 0.5);
     border-radius: 50px;
     /* Pill Shape */
 
@@ -240,7 +266,7 @@ button[type="submit"]:hover::before {
 
 /* === HEADER === */
 header {
-    background: rgba(8, 8, 8, 0.8);
+    background: rgba(3, 3, 3, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     position: fixed;
     /* Changed from sticky */
@@ -248,15 +274,15 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     transition: all 0.4s ease;
 }
 
 header.scrolled {
-    background: rgba(5, 5, 5, 0.95);
-    border-bottom-color: rgba(255, 0, 0, 0.3);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(3, 3, 3, 0.85);
+    border-bottom-color: rgba(255, 0, 60, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 0, 60, 0.1);
 }
 
 .top-bar {

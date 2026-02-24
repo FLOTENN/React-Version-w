@@ -51,7 +51,8 @@
 .slide-overlay-premium {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.8) 40%, rgba(3, 3, 3, 0.1) 100%),
+        radial-gradient(circle at 30% 50%, rgba(255, 0, 60, 0.15) 0%, transparent 60%);
     z-index: 1;
 }
 
@@ -351,20 +352,22 @@
 .service-card-premium {
     position: relative;
     height: 400px;
-    background: #000;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border-radius: 16px;
     overflow: hidden;
     display: block;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     text-decoration: none;
     color: inherit;
 }
 
 .service-card-premium:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba(255, 0, 60, 0.5);
+    box-shadow: 0 20px 40px rgba(255, 0, 60, 0.15), 0 0 20px rgba(255, 0, 60, 0.1);
 }
 
 .service-img-wrapper {
@@ -535,7 +538,7 @@
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(204, 0, 0, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 0, 60, 0.15) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 0;
@@ -586,8 +589,8 @@
 
 .stat-card-premium:hover {
     transform: translateY(-8px);
-    border-color: rgba(204, 0, 0, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(204, 0, 0, 0.2);
+    border-color: rgba(255, 0, 60, 0.5);
+    box-shadow: 0 20px 40px rgba(255, 0, 60, 0.15), 0 0 20px rgba(255, 0, 60, 0.1);
 }
 
 .stat-card-premium:hover::before {
