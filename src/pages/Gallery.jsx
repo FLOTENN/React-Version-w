@@ -78,7 +78,7 @@ export default function Gallery() {
 
             {/* Hero */}
             <section className="page-hero" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=1600&q=80')" }}>
-                <div className="page-hero-overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.95) 100%)' }}></div>
+                <div className="page-hero-overlay"></div>
                 <div className="page-hero-content">
                     <h1>OUR <span>WORK</span></h1>
                     <p style={{ letterSpacing: '0.1em', textTransform: 'uppercase' }}>A curated showcase of automotive perfection</p>

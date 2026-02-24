@@ -40,7 +40,7 @@ export default function Blog() {
             </section>
 
             {/* Articles */}
-            <section style={{ padding: '80px 0 120px', background: '#050505' }}>
+            <section style={{ padding: '80px 0 120px', background: 'var(--black)' }}>
                 <div className="container" style={{ maxWidth: '1400px', width: '92%', margin: '0 auto' }}>
                     {loading ? (
                         <div style={{ textAlign: 'center', padding: '60px', color: '#777' }}>Loading articles...</div>

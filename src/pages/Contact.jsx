@@ -64,7 +64,7 @@ export default function Contact() {
 
             {/* Hero */}
             <section className="page-hero" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=80')" }}>
-                <div className="page-hero-overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.95) 100%)' }}></div>
+                <div className="page-hero-overlay"></div>
                 <div className="page-hero-content">
                     <h1>CONTACT <span>US</span></h1>
                     <p>Expert car care is just a message away. Visit our studio or get in touch for a consultation.</p>

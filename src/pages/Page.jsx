@@ -49,7 +49,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section style={{ padding: '80px 0', background: '#050505' }}>
+            <section style={{ padding: '80px 0', background: 'var(--black)' }}>
                 <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
                     <div style={{ color: '#ccc', lineHeight: 1.8, fontSize: '1.05rem' }} dangerouslySetInnerHTML={{ __html: page.content }}></div>
                 </div>

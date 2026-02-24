@@ -14,7 +14,7 @@ export default function NotFound() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                background: '#050505',
+                background: 'var(--black)',
                 position: 'relative',
                 overflow: 'hidden',
                 textAlign: 'center',

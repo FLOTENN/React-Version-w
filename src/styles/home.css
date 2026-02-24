@@ -337,7 +337,7 @@
 
 /* === Services Section (Premium) === */
 .services-section {
-    background: #050505;
+    background: var(--black);
     padding: 100px 0;
     position: relative;
 }
@@ -529,7 +529,7 @@
 /* === Stats & Social Section === */
 .stats-social-section {
     padding: 100px 0;
-    background: #050505;
+    background: var(--black);
     position: relative;
     overflow: hidden;
 }

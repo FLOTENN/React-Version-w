@@ -32,7 +32,7 @@
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -40,12 +40,31 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #2a2a2a;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
+}
+
+/* Scroll Progress Indicator Component */
+.scroll-indicator-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100vh;
+    background: transparent;
+    z-index: 9999;
+}
+
+.scroll-indicator-bar {
+    width: 100%;
+    background: var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+    border-radius: 0 0 5px 5px;
+    transition: height 0.1s ease-out;
 }
 
 * {
@@ -737,7 +756,7 @@ nav a:hover::after {
 
 /* === FOOTER PREMIUM === */
 .footer-premium {
-    background: #050505;
+    background: var(--black);
     padding: 80px 0 30px;
     position: relative;
     font-family: var(--font-body);

@@ -48,7 +48,7 @@ export default function FAQ() {
 
             {/* Hero */}
             <section className="page-hero" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600&q=80')" }}>
-                <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.3), #050505)', backdropFilter: 'blur(2px)' }}></div>
+                <div className="page-hero-overlay"></div>
                 <div className="page-hero-content">
                     <h1>FREQUENTLY ASKED <span>QUESTIONS</span></h1>
                     <p className="hero-subtitle">EVERYTHING YOU NEED TO KNOW ABOUT OUR PREMIUM SERVICES</p>

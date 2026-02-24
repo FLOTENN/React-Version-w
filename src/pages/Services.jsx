@@ -31,7 +31,7 @@ export default function Services() {
 
             {/* Hero */}
             <section className="page-hero tall" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1600&q=80')" }}>
-                <div className="page-hero-overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.95) 100%)' }}></div>
+                <div className="page-hero-overlay"></div>
                 <div className="page-hero-content">
                     <h1>WHAT WE <span>DO</span></h1>
                     <p style={{ color: '#aaa', letterSpacing: '0.2em', fontWeight: 500 }}>PAINT PROTECTION • DETAILING • RESTORATION</p>
@@ -39,7 +39,7 @@ export default function Services() {
             </section>
 
             {/* Services Grid */}
-            <section id="premium-services-grid" className="services-page" style={{ padding: '80px 0', background: '#050505' }}>
+            <section id="premium-services-grid" className="services-page" style={{ padding: '80px 0', background: 'var(--black)' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                         <h2 className="section-title" style={{ marginBottom: '10px' }}>CHOOSE FROM A RANGE OF <span className="text-primary">PREMIUM SERVICES</span></h2>

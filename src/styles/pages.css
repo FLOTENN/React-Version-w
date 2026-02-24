@@ -23,7 +23,8 @@
 .page-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #050505 100%);
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.5) 0%, #0a0a0a 100%),
+        radial-gradient(circle at 50% 100%, rgba(255, 0, 60, 0.15) 0%, transparent 60%);
     z-index: 1;
 }
 
@@ -595,7 +596,7 @@
 /* === Contact Page === */
 .contact-section {
     padding: 100px 0;
-    background: #050505;
+    background: var(--black);
 }
 
 .contact-grid {
@@ -866,7 +867,7 @@
 
 /* === FAQ Page === */
 .faq-section {
-    background: #050505;
+    background: var(--black);
     position: relative;
     padding: 100px 0;
     overflow: hidden;
@@ -1110,7 +1111,7 @@
 /* === Gallery Page === */
 .gallery-section {
     padding: 100px 0;
-    background: #050505;
+    background: var(--black);
 }
 
 .masonry-grid {
@@ -1398,7 +1399,7 @@
 
 .service-detail-content {
     padding: 80px 0;
-    background: #050505;
+    background: var(--black);
 }
 
 .service-detail-content .container {
@@ -1429,7 +1430,7 @@
 
 .blog-detail-content {
     padding: 80px 0;
-    background: #050505;
+    background: var(--black);
 }
 
 .blog-detail-content .container {

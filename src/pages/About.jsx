@@ -50,7 +50,7 @@ export default function About() {
 
             {/* Hero */}
             <section className="page-hero tall" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80')" }}>
-                <div className="page-hero-overlay" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.95) 100%)' }}></div>
+                <div className="page-hero-overlay"></div>
                 <div className="page-hero-content">
                     <h1>ABOUT <span>US</span></h1>
                     <p style={{ color: '#aaa', letterSpacing: '0.2em', marginTop: '10px' }}>EST. 2016 • PUNE, INDIA</p>
