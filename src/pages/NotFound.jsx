@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AnimatedButton from '../components/AnimatedButton';
 
 export default function NotFound() {
     return (
@@ -59,9 +60,9 @@ export default function NotFound() {
                     The page you're looking for doesn't exist or has been moved.
                 </p>
 
-                <Link to="/" className="btn-glow" style={{ position: 'relative' }}>
+                <AnimatedButton to="/" className="btn-glow" style={{ position: 'relative' }} iconClass="fa-solid fa-home">
                     Back to Home
-                </Link>
+                </AnimatedButton>
             </section>
         </>
     );

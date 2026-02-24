@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AnimatedButton from '../components/AnimatedButton';
 import { getPostBySlug } from '../services/api';
 import { formatDate } from '../utils/helpers';
 import '../styles/pages.css';
@@ -32,7 +33,7 @@ export default function BlogDetail() {
         return (
             <div style={{ minHeight: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#777', gap: '20px' }}>
                 <h2>Article Not Found</h2>
-                <Link to="/blog" className="btn-glow">Back to Blog</Link>
+                <AnimatedButton to="/blog" className="btn-glow" iconClass="fa-solid fa-arrow-left">Back to Blog</AnimatedButton>
             </div>
         );
     }

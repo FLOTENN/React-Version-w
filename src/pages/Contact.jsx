@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { createEnquiry } from '../services/api';
+import AnimatedButton from '../components/AnimatedButton';
 import '../styles/pages.css';
 
 const serviceOptions = [
@@ -161,9 +162,9 @@ export default function Contact() {
                                         <textarea name="message" rows="4" className="form-control-premium" placeholder="Tell us about your requirements..." required value={formData.message} onChange={handleChange} style={{ resize: 'vertical' }}></textarea>
                                     </div>
 
-                                    <button type="submit" className="btn" disabled={submitting}>
+                                    <AnimatedButton type="submit" className="btn" disabled={submitting} iconClass="fa-solid fa-paper-plane">
                                         {submitting ? 'Sending...' : 'Send Message'}
-                                    </button>
+                                    </AnimatedButton>
                                     <p style={{ fontSize: '0.8rem', color: '#555', marginTop: '25px', textAlign: 'center' }}>
                                         <i>We usually respond within 24 hours.</i>
                                     </p>

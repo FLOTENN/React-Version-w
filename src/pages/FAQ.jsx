@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+
+import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import AnimatedButton from '../components/AnimatedButton';
 import { getPublishedFaqs } from '../services/api';
 import '../styles/pages.css';
 
@@ -84,7 +85,7 @@ export default function FAQ() {
                                         const idx = globalIndex++;
                                         const isActive = activeIndex === idx;
                                         return (
-                                            <div className={`premium-accordion-item${isActive ? ' active' : ''}`} key={faq.id || idx}>
+                                            <div className={`premium - accordion - item${isActive ? ' active' : ''} `} key={faq.id || idx}>
                                                 <button className="premium-accordion-header" onClick={() => toggleAccordion(idx)}>
                                                     <span className="question-text">{faq.question}</span>
                                                     <div className="icon-wrapper">
@@ -113,7 +114,7 @@ export default function FAQ() {
                     <div className="faq-cta">
                         <h3>Still have questions?</h3>
                         <p>Our experts are ready to help you with any specific queries.</p>
-                        <Link to="/contact" className="btn-glow">Contact Us</Link>
+                        <AnimatedButton to="/contact" className="btn-glow" iconClass="fa-solid fa-paper-plane">Contact Us</AnimatedButton>
                     </div>
                 </div>
             </section>

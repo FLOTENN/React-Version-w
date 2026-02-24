@@ -153,85 +153,59 @@ ul {
 
 
 
-/* === BUTTONS === */
-/* === BUTTONS (PREMIUM SWIPE GLASS) === */
-.btn,
-.btn-glow,
-.btn-trust,
-.btn-outline,
-input[type="submit"],
-button[type="submit"] {
+/* === BUTTONS (GSAP ANIMATED) === */
+.btn-animated {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 16px 45px;
-
-    background: var(--white);
-    color: var(--black);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.95rem;
-
-    border: 1px solid var(--white);
-    border-radius: 50px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-    min-height: 52px;
-    text-decoration: none;
-    z-index: 1;
-
-    -webkit-appearance: none;
-}
-
-/* Secondary / Outline Variant Override */
-.btn-outline {
-    background: transparent;
-    color: var(--white);
-    border-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Hover Effects (Universal) */
-.btn:hover,
-.btn-glow:hover,
-.btn-trust:hover,
-.btn-outline:hover,
-input[type="submit"]:hover,
-button[type="submit"]:hover {
-    color: var(--white);
-    border-color: var(--primary);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(255, 0, 60, 0.2);
-}
-
-/* Red Swipe Animation Layer */
-.btn::before,
-.btn-glow::before,
-.btn-trust::before,
-.btn-outline::before,
-input[type="submit"]::before,
-button[type="submit"]::before {
-    content: '';
-    position: absolute;
-    inset: 0;
     background: var(--primary);
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    color: #ffffff;
+    border: none;
+    padding: 6px 6px 6px 28px;
+    border-radius: 60px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /* The Shadow for Black Background */
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.4),
+        0 0 40px rgba(255, 0, 60, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn:hover::before,
-.btn-glow:hover::before,
-.btn-trust:hover::before,
-.btn-outline:hover::before,
-input[type="submit"]:hover::before,
-button[type="submit"]:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+.btn-animated:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 0, 60, 0.5);
+    color: #ffffff;
+}
+
+.btn-animated-text {
+    margin-right: 18px;
+    letter-spacing: 0.1em;
+}
+
+.btn-animated-icon {
+    width: 46px;
+    height: 46px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Rim light to make the circle pop from the button */
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2),
+        3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Targets the FontAwesome Icon */
+.btn-animated-icon i {
+    color: #ffffff;
+    font-size: 1.2rem;
 }
 
 .section-title {
