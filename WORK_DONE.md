@@ -208,6 +208,14 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
+### 2026-02-28 — Homepage Specific Custom Button Styles
+
+**Enhancement:** Created a new `.btn-grad` specific class in `home.css` with 100% of the exact CSS properties requested by the user, and applied it to the Homepage "Discover More" and "Leave a Feedback" buttons to match their specific envisioned design.
+
+**Files modified:** `src/styles/home.css`, `src/pages/Home.jsx`
+
+---
+
 ### 2026-02-27 — Button Gradient and Hover Animation
 
 **Enhancement:** Replaced the global button background with a custom premium gradient (`#020024` to `#8C3300`). Removed the previous scale and box-shadow hover effects, replacing them with a sleek background-position animation on hover while retaining the existing GSAP click animations.
