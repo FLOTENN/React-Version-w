@@ -208,11 +208,11 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
-### 2026-02-27 — Button Gradient and Hover Animation
+### 2026-02-28 — Homepage Button Styling
 
-**Enhancement:** Replaced the global button background with a custom premium gradient (`#020024` to `#8C3300`). Removed the previous scale and box-shadow hover effects, replacing them with a sleek background-position animation on hover while retaining the existing GSAP click animations.
+**Enhancement:** Replaced the global button background with the `.btn-grad` CSS exactly as provided. Specifically updated `Home.jsx` to use `.btn-grad` instead of `.btn-glow` and appended the exact user CSS snippet to `home.css` to respect padding, hover animations, and the glowing red box-shadow while retaining the `AnimatedButton` component structure.
 
-**Files modified:** `src/styles/global.css`
+**Files modified:** `src/styles/global.css`, `src/styles/home.css`, `src/pages/Home.jsx`
 
 ---
 
