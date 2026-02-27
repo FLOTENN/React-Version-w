@@ -208,6 +208,19 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
+### 2026-02-27 — Button Gradient Styles Update
+
+**Enhancement:** Updated the global button styles with a premium multi-stop linear gradient background.
+
+| # | Component | Accomplishment |
+|---|-----------|----------------|
+| 1 | **Buttons** | Replaced the solid primary background color in `.animated-premium-btn`, `.btn`, and `.btn-icon` with a custom linear-gradient `#020024` to `#8C3300` across all public buttons while preserving GSAP click animations. |
+
+**Files modified:** `src/styles/global.css`
+
+---
+
+
 ### 2026-02-24 — Premium Global High-Contrast UI Overhaul (Latest)
 
 **Major Enhancement:** Upgraded the entire website's user interface to a premium, rich, high-contrast dark theme with neon glassmorphism effects universally applied to all pages.
