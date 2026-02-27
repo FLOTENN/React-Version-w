@@ -215,7 +215,7 @@ export default function Home() {
                                 Experience holistic vehicle care with precision and attention to detail.
                             </p>
                             <div style={{ marginTop: '40px' }}>
-                                <AnimatedButton to="/about" className="btn-glow" iconClass="fa-solid fa-arrow-right">DISCOVER MORE</AnimatedButton>
+                                <AnimatedButton to="/about" className="btn-grad" iconClass="fa-solid fa-arrow-right">DISCOVER MORE</AnimatedButton>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@ export default function Home() {
                                 <p style={{ color: 'var(--text-grey)' }}>Real feedback from our valued clients.</p>
                             </div>
                             <div className="hide-mobile">
-                                <AnimatedButton href="https://g.page/r/CbGjCj_xXlVxEBM/review" target="_blank" rel="noreferrer" className="btn-glow" iconClass="fa-solid fa-star">
+                                <AnimatedButton href="https://g.page/r/CbGjCj_xXlVxEBM/review" target="_blank" rel="noreferrer" className="btn-grad" iconClass="fa-solid fa-star">
                                     Leave a Feedback
                                 </AnimatedButton>
                             </div>
@@ -313,7 +313,7 @@ export default function Home() {
                         </div>
 
                         <div className="show-mobile" style={{ textAlign: 'center', marginTop: '40px', display: 'none' }}>
-                            <AnimatedButton href="https://g.page/r/CbGjCj_xXlVxEBM/review" target="_blank" rel="noreferrer" className="btn-glow" style={{ width: '100%' }} iconClass="fa-solid fa-star">
+                            <AnimatedButton href="https://g.page/r/CbGjCj_xXlVxEBM/review" target="_blank" rel="noreferrer" className="btn-grad" style={{ width: '100%' }} iconClass="fa-solid fa-star">
                                 Leave a Feedback
                             </AnimatedButton>
                         </div>
