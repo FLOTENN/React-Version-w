@@ -148,11 +148,7 @@ button[type="submit"] {
     position: relative;
     display: inline-flex;
     align-items: center;
-    background: #020024;
-    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(140, 51, 0, 1) 100%);
-    background: -moz-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(140, 51, 0, 1) 100%);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(140, 51, 0, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#8C3300", GradientType=1);
+    background-image: linear-gradient(to right, #000000 0%, #e74c3c 51%, #000000 100%);
     background-size: 200% auto;
     color: var(--white);
     border: none;
@@ -166,7 +162,8 @@ button[type="submit"] {
     cursor: pointer;
     outline: none;
     text-decoration: none;
-    transition: background-position 0.4s ease;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #000;
     -webkit-appearance: none;
     appearance: none;
     overflow: visible;
@@ -179,8 +176,9 @@ button[type="submit"] {
 .btn-outline:hover,
 input[type="submit"]:hover,
 button[type="submit"]:hover {
-    color: var(--white);
     background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Fallback for buttons haven't been swapped to AnimatedButton yet */
