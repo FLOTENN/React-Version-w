@@ -998,24 +998,20 @@ nav a:hover::after {
 
 /* Button Glow */
 .btn-glow {
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
-    animation: pulse-glow 2s infinite;
-    border: none;
-    background: var(--primary) !important;
-    color: white !important;
+    animation: pulse-glow-white 2.5s infinite;
 }
 
-@keyframes pulse-glow {
+@keyframes pulse-glow-white {
     0% {
-        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 20px #eee;
     }
 
     50% {
-        box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+        box-shadow: 0 0 35px #fff;
     }
 
     100% {
-        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 20px #eee;
     }
 }
 
