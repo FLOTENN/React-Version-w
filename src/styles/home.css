@@ -127,12 +127,11 @@
     transition: all 0.8s ease;
 }
 
-/* Button animations are handled globally, we just add the slide-in effect */
-.slide-content-premium .animated-premium-btn,
 .slide-content-premium .btn {
     width: fit-content;
     transform: translateY(20px);
     opacity: 0;
+    transition: all 0.6s ease;
 }
 
 /* Active State Animations */
