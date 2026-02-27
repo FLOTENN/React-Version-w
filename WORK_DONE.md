@@ -208,18 +208,13 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
-### 2026-02-27 — Button Gradient Styles Update
+### 2026-02-27 — Button Gradient and Hover Animation
 
-**Enhancement:** Updated the global button styles with a premium multi-stop linear gradient background.
-
-| # | Component | Accomplishment |
-|---|-----------|----------------|
-| 1 | **Buttons** | Replaced the solid primary background color in `.animated-premium-btn`, `.btn`, and `.btn-icon` with a custom linear-gradient `#020024` to `#8C3300` across all public buttons while preserving GSAP click animations. |
+**Enhancement:** Replaced the global button background with a custom premium gradient (`#020024` to `#8C3300`). Removed the previous scale and box-shadow hover effects, replacing them with a sleek background-position animation on hover while retaining the existing GSAP click animations.
 
 **Files modified:** `src/styles/global.css`
 
 ---
-
 
 ### 2026-02-24 — Premium Global High-Contrast UI Overhaul (Latest)
 
