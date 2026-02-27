@@ -146,18 +146,17 @@ ul {
 input[type="submit"],
 button[type="submit"] {
     position: relative;
-    display: inline-flex;
-    justify-content: center;
+    display: block;
     align-items: center;
-    gap: 15px;
-    /* Added gap to space text and icon elegantly with the new padding */
     background-image: linear-gradient(to right, #000000 0%, #e74c3c 51%, #000000 100%);
     background-size: 200% auto;
     color: white;
     border: none;
+    margin: 10px;
     padding: 15px 45px;
     border-radius: 10px;
     font-family: var(--font-heading);
+    text-align: center;
     text-transform: uppercase;
     font-size: 0.95rem;
     letter-spacing: 0.1em;
@@ -998,20 +997,24 @@ nav a:hover::after {
 
 /* Button Glow */
 .btn-glow {
-    animation: pulse-glow-white 2.5s infinite;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    animation: pulse-glow 2s infinite;
+    border: none;
+    background: var(--primary) !important;
+    color: white !important;
 }
 
-@keyframes pulse-glow-white {
+@keyframes pulse-glow {
     0% {
-        box-shadow: 0 0 20px #eee;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     }
 
     50% {
-        box-shadow: 0 0 35px #fff;
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
     }
 
     100% {
-        box-shadow: 0 0 20px #eee;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     }
 }
 
