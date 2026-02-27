@@ -822,7 +822,7 @@
     }
 }
 
-/* User exact button gradient for the home page */
+/* User Custom Button Styling for Homepage */
 .btn-grad {
     background-image: linear-gradient(to right, #000000 0%, #e74c3c 51%, #000000 100%) !important;
     margin: 10px !important;
@@ -832,8 +832,7 @@
     transition: 0.5s !important;
     background-size: 200% auto !important;
     color: white !important;
-    box-shadow: 0 0 20px #e74c3c !important;
-    /* using a red shadow instead of #eee to fit dark theme, but keeping structure */
+    box-shadow: 0 0 20px #eee !important;
     border-radius: 10px !important;
     display: inline-flex !important;
     align-items: center !important;
