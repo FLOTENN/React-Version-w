@@ -208,9 +208,9 @@ npm run dev
 
 > This section tracks every change made to the project, serving as a persistent memory reference.
 
-### 2026-02-27 — Button Gradient and Exact Custom Design
+### 2026-02-27 — Button Gradient and Hover Animation
 
-**Enhancement:** Replaced the global button background with a custom gradient (`#000000` to `#e74c3c`), applying the exact user-provided `padding: 15px 45px`, `border-radius: 10px`, and `box-shadow: 0 0 20px #eee`. Removed the previous rounded pill shape and custom circular icon backgrounds so the design 100% matches the requested style across all pages, including the homepage.
+**Enhancement:** Replaced the global button background with a custom premium gradient (`#020024` to `#8C3300`). Removed the previous scale and box-shadow hover effects, replacing them with a sleek background-position animation on hover while retaining the existing GSAP click animations.
 
 **Files modified:** `src/styles/global.css`
 
