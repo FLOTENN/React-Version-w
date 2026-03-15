@@ -729,7 +729,118 @@
     padding-left: 10px;
 }
 
+/* Custom Service Dropdown */
+.custom-select-wrapper {
+    position: relative;
+    z-index: 10;
+}
 
+.custom-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.custom-dropdown:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+
+.custom-select-wrapper.active .custom-dropdown {
+    border-bottom-color: var(--white);
+    padding-left: 10px;
+}
+
+.custom-dropdown-selected {
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    font-family: var(--font-body);
+    transition: color 0.3s ease;
+}
+
+.custom-dropdown-selected.has-value {
+    color: var(--white);
+    font-size: 1.05rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.custom-dropdown-arrow {
+    color: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+}
+
+.custom-select-wrapper.active .custom-dropdown-arrow {
+    transform: rotate(180deg);
+    color: var(--primary);
+}
+
+.custom-dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-select-wrapper.active .custom-dropdown-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.custom-option {
+    padding: 14px 24px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    position: relative;
+}
+
+.custom-option:last-child {
+    border-bottom: none;
+}
+
+.custom-option:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+    padding-left: 32px;
+}
+
+.custom-option:hover::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--primary);
+}
 
 .map-container {
     position: relative;
